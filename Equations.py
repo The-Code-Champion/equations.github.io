@@ -5,7 +5,7 @@ from sympy import Eq, symbols, simplify
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
-def equation_web()
+def equation_web():
     if 'CD_button' in request.form:
         CD_button = request.form['CD_button']
         return redirect(url_for('CD_val'))
